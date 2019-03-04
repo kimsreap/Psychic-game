@@ -1,0 +1,11 @@
+body {
+    margin: 10% 20% 0 25%;
+    text-align: left;
+    background-color: bisque;
+}
+
+#game {
+    color: darkslategray;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 25px;
+}
