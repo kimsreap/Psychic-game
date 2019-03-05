@@ -3,7 +3,7 @@ var computerChoice = ["a", "b", "c", "d", "e", "f", "g", "h",
 
 var Wins = 0;
 var Losses = 0;
-numGuesses = 9;
+var numGuesses = 9;
 var guessChoice = [];
 
 document.onkeyup = function(event) {
@@ -12,21 +12,21 @@ document.onkeyup = function(event) {
     var options = ["a", "b", "c", "d", "e", "f", "g", "h",
     "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     
-    if (options.indexOf(userGuess) > -1) {
+    if (options.indexOf(userGuess) > - 1 ) {
             if (userGuess === computerGuess) {
                 Wins++;
                 numGuesses = 9;
                 guessChoice = [];
             }
             
-            if(userGuess !== computerGuess) {
-                numGuesses --;
+            if(userGuess != computerGuess) {
+                numGuesses--;
                 guessChoice.push(userGuess);
             }
 
-            if (numGuesses === 0){
+            if (userGuess === 0) {
+                Losses++;
                 numGuesses = 9;
-                losses ++;
                 guessChoice = [];
             }
 
